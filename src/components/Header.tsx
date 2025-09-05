@@ -10,7 +10,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <Phone className="w-4 h-4" />
-              <span>1-800-DOMINOS</span>
+              <span>(818) 335-8825</span>
             </div>
           </div>
           <div className="flex items-center space-x-4">
@@ -34,28 +34,28 @@ const Header = () => {
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
                 </div>
               </div>
-              <div className="text-2xl font-black">Domino's</div>
+              <div className="text-2xl font-black">Onix Chat</div>
             </div>
 
             {/* Navigation links */}
             <div className="hidden md:flex items-center space-x-6">
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                ORDER ONLINE
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#order">ORDER ONLINE</a>
               </Button>
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                LOCATIONS
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#locations">LOCATIONS</a>
               </Button>
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                MENU
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#menu">MENU</a>
               </Button>
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                COUPONS
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#coupons">COUPONS</a>
               </Button>
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                TRACKER
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#tracker">TRACKER</a>
               </Button>
-              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold">
-                REWARDS
+              <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 font-semibold" asChild>
+                <a href="#rewards">REWARDS</a>
               </Button>
             </div>
           </div>
