@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-gradient-to-br from-onix-primary via-onix-primary/90 to-onix-secondary text-white hover:shadow-2xl hover:shadow-onix-primary/50 transform hover:scale-105 transition-all duration-300 font-bold backdrop-blur-sm border border-white/20",
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-gradient-to-br from-red-500 via-red-600 to-red-700 text-white hover:shadow-2xl hover:shadow-red-500/50 transform hover:scale-105 transition-all duration-300 font-bold backdrop-blur-sm border border-white/20",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border-2 border-white/30 bg-white/10 text-white hover:bg-white/20 hover:shadow-xl backdrop-blur-md transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-gradient-to-br from-gray-600 via-gray-700 to-gray-800 text-white hover:shadow-2xl hover:shadow-gray-600/50 transform hover:scale-105 transition-all duration-300 font-bold backdrop-blur-sm border border-white/20",
+        ghost: "hover:bg-white/20 text-white hover:shadow-lg backdrop-blur-sm transition-all duration-300",
+        link: "text-white underline-offset-4 hover:underline hover:shadow-lg transition-all duration-300",
         dominos: "bg-gradient-to-r from-dominos-red to-dominos-red-dark text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-bold",
         "dominos-blue": "bg-gradient-to-r from-dominos-blue to-dominos-blue-dark text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-bold"
       },
