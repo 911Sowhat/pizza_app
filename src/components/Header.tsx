@@ -1,5 +1,6 @@
 import { ShoppingCart, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/onix-logo.jpg";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
           </div>
           <div className="flex items-center space-x-4">
             <span className="bg-white/20 px-2 py-1 rounded text-xs font-semibold">
-              NOW EARN FREE DOMINOS EVERY 2 ORDERS
+              NOW EARN FREE ONIX BITES EVERY 2 ORDERS
             </span>
             <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20 text-sm">
               SIGN IN & EARN REWARDS
@@ -28,13 +29,12 @@ const Header = () => {
           <div className="flex items-center space-x-8">
             {/* Logo */}
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mr-3">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary rounded-full mr-1"></div>
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                </div>
-              </div>
-              <div className="text-2xl font-black">Onix Chat</div>
+              <img 
+                src={logo} 
+                alt="Onix Bites Logo" 
+                className="w-12 h-12 object-contain mr-3"
+              />
+              <div className="text-2xl font-black">Onix Bites</div>
             </div>
 
             {/* Navigation links */}
