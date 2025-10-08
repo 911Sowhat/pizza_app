@@ -1,35 +1,41 @@
 import { Button } from "@/components/ui/button";
+import pizzaImg from "@/assets/menu-pizza.jpg";
+import chickenImg from "@/assets/menu-chicken.jpg";
+import sandwichImg from "@/assets/menu-sandwich.jpg";
+import pastaImg from "@/assets/menu-pasta.jpg";
+import sidesImg from "@/assets/menu-sides.jpg";
+import drinksImg from "@/assets/menu-drinks.jpg";
 
 const MenuBrowse = () => {
   const menuItems = [
     {
       name: "Pizza",
-      image: "/placeholder.svg",
+      image: pizzaImg,
       description: "Hand tossed, thin crust & more"
     },
     {
       name: "Chicken", 
-      image: "/placeholder.svg",
+      image: chickenImg,
       description: "Wings, bites, sandwiches"
     },
     {
       name: "Sandwiches",
-      image: "/placeholder.svg", 
+      image: sandwichImg, 
       description: "Oven baked & toasted"
     },
     {
       name: "Pasta",
-      image: "/placeholder.svg",
+      image: pastaImg,
       description: "Italian classics & more"
     },
     {
       name: "Sides",
-      image: "/placeholder.svg",
+      image: sidesImg,
       description: "Bread, salads & desserts"
     },
     {
       name: "Drinks",
-      image: "/placeholder.svg",
+      image: drinksImg,
       description: "Coca-Cola products & more"
     }
   ];
@@ -54,9 +60,11 @@ const MenuBrowse = () => {
               className="text-center group cursor-pointer"
             >
               <div className="w-full aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden group-hover:shadow-lg transition-all duration-300">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <span className="text-4xl font-black text-gray-400">{item.name[0]}</span>
-                </div>
+                <img 
+                  src={item.image} 
+                  alt={item.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
               </div>
               <h3 className="font-bold text-lg text-gray-800 mb-1">{item.name}</h3>
               <p className="text-sm text-gray-600">{item.description}</p>
